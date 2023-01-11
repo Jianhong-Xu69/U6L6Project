@@ -317,4 +317,11 @@ public class ArrayAlgorithms {
         }
         return out;
     }
+    public static void shiftLeftModify(int[] numList) { /* implement this method! */
+        int temp = numList[0];
+        for (int i = 0; i < numList.length-1; i++) {
+            numList[i] = numList[i+1];
+        }
+        numList[numList.length-1] = temp;
+    }
 }
